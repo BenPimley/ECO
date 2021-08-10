@@ -1,5 +1,5 @@
-﻿Type,Time,Value,Value2,Value = megajoules,Value2 = Total for the time period
-Human,1561-1570,4373,19167,,
+﻿Type,Time,Value,Value2,Detail,
+Human,1561-1570,4373,19167,Value = energy consumption in megajoules,Value2 = Total for the time period
 Draught Animal,1561-1570,6210,16927,,
 Firewood,1561-1570,6324,20253,,
 Wind,1561-1570,59,29602,,
