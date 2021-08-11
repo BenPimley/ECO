@@ -116,7 +116,7 @@
 
       {"field": "date3", "type": "temporal", "title": "Year", "timeUnit": "year"},
 
-      {"field": "value", "type": "quantitative", "title": "Unemployment level (thousands)"}
+      {"field": "value", "type": "quantitative", "title": "Employment rate"}
 
    
 
