@@ -1,0 +1,14 @@
+﻿Type,Category,Value,Value2,Detail
+Mammals,Vertebrate,"1,323",26,Value = Number of threatened species by 2021 (IUCN Red List version 2021-1)
+Birds,Vertebrate,"1,481",14,Value2 = % of threatened species if known 
+Reptiles,Vertebrate,"1,458",,
+Amphibians,Vertebrate,"2,442",41,
+Fishes,Vertebrate,"3,210",,
+Insects,Invertebrate,"1,926",,
+Molluscs,Invertebrate,"2,305",,
+Crustaceans,Invertebrate,743,,
+Corals,Invertebrate,237,,
+Arachnids,Invertebrate,218,,
+Velvet Worms,Invertebrate,9,,
+Horseshoe Crabs,Invertebrate,2,100,
+Others,Invertebrate,148,,
