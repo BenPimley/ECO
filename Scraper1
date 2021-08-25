@@ -3,7 +3,7 @@
   "nbformat_minor": 0,
   "metadata": {
     "colab": {
-      "name": "firstScraper.ipynb",
+      "name": "Copy of firstScraper.ipynb",
       "provenance": [],
       "collapsed_sections": [],
       "include_colab_link": true
@@ -64,7 +64,7 @@
         "# ////////////////////////////////////////////////////////////////\n",
         "# ////////////////////////////////////////////////////////////////"
       ],
-      "execution_count": 2,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -100,7 +100,7 @@
         "# ////////////////////////////////////////////////////////////////\n",
         "# ////////////////////////////////////////////////////////////////"
       ],
-      "execution_count": 50,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -160,7 +160,7 @@
         "# /// Now print this out:\n",
         "Names"
       ],
-      "execution_count": 79,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -196,7 +196,7 @@
         "# Quick aside 1\n",
         "team = ['Richard', 'Charlie', 'Juliette', 'Ben', 'Xenia']"
       ],
-      "execution_count": 6,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -211,7 +211,7 @@
       "source": [
         "Names[0]\n"
       ],
-      "execution_count": 27,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -241,7 +241,7 @@
       "source": [
         "Names[0].text"
       ],
-      "execution_count": 75,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -272,7 +272,7 @@
       "source": [
         "team"
       ],
-      "execution_count": 7,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -301,7 +301,7 @@
       "source": [
         "team[3]"
       ],
-      "execution_count": 10,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -336,7 +336,7 @@
         "# soup_h1[1].text # /// Problem: counting starts at 0, not at 1. \n",
         "soup_h1[0].text # /// This now gives us what we wanted. "
       ],
-      "execution_count": 15,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -386,7 +386,7 @@
         "# ////////////////////////////////////////////////////////////////\n",
         "# ////////////////////////////////////////////////////////////////"
       ],
-      "execution_count": 16,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -402,7 +402,7 @@
       "source": [
         "price[0].text"
       ],
-      "execution_count": 17,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -448,7 +448,7 @@
         "# ////////////////////////////////////////////////////////////////\n",
         "# ////////////////////////////////////////////////////////////////"
       ],
-      "execution_count": 18,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -467,7 +467,7 @@
         "results = [name, price, ticker, change]\n",
         "results"
       ],
-      "execution_count": 19,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -496,7 +496,7 @@
         "# /// And - useful tip - check how long the array is\n",
         "lengthResults = len(results)"
       ],
-      "execution_count": 21,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -511,7 +511,7 @@
       "source": [
         "results"
       ],
-      "execution_count": 20,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
