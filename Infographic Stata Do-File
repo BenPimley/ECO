@@ -1,0 +1,48 @@
+
+//Set directory and blank dataset
+cd "/Users/benpimley/Desktop/Bristol/4th Year/ComEcon/Infographic"
+clear
+
+//Choose pasta from overall dataset
+use "db_prices.dta"
+keep if item_id==210204
+save "db_PastaPrices.dta", replace
+
+//Keep only the mean prices for each region over time
+collapse (mean) price, by(quote_date item_id region)
+label variable price "Mean price"
+drop if quote_date < 200101
+
+//Add in the dates in a Stata form
+merge m:1 quote_date using "db_date.dta", keepusing(date date2)
+keep if _merge==3
+drop _merge
+
+//New variable to stop repeated time values
+egen panelid = group(item_id region)
+tsset panelid date
+
+//New variable to calculate month-on-month inflation
+gen p_ch_1 = (price/L1.price)-1
+label variable p_ch_1 "Monthly price change"
+gen pflation = p_ch_1*100
+label variable pflation "Monthly percentage change"
+
+//Add in the regional data
+rename region region_n
+merge m:1 region_n using "db_region.dta"
+keep if _merge==3
+drop _merge
+
+
+//Graph for the 12 regions
+line pflation date2, ///
+by(region, graphregion(color(white)) title ("Spagflation") subtitle ("Pasta price monthly percentage change, for UK regions, 2001-2021") note("Source: ONS and Davies (2021)", size(vsmall))) ///
+tlabel(01jan2000 01jan2010 01jan2020, format(%tdCY)) ///
+tline(01-07-2008, lp(dot) lc(black)) ///
+tline(01-03-2020, lp(dot) lc(black)) ///
+lcolor("orange") lwidth(medium medthick medium) ///
+ytitle("", size(small)) xtitle("", size(small))
+
+//Export chart
+graph export "Spagflation.pdf", as(pdf) replace
